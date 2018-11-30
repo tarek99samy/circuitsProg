@@ -1,0 +1,9 @@
+﻿  main.cpp
+d:\cmp\circuitsproj\consoleapplication1\consoleapplication1\main.cpp(42): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\cmp\circuitsproj\consoleapplication1\consoleapplication1\main.cpp(44): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+d:\cmp\circuitsproj\consoleapplication1\consoleapplication1\main.cpp(57): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\cmp\circuitsproj\consoleapplication1\consoleapplication1\main.cpp(72): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\cmp\circuitsproj\consoleapplication1\consoleapplication1\main.cpp(86): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\cmp\circuitsproj\consoleapplication1\consoleapplication1\main.cpp(105): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\cmp\circuitsproj\consoleapplication1\consoleapplication1\main.cpp(141): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+  ConsoleApplication1.vcxproj -> D:\cmp\circuitsProj\ConsoleApplication1\Debug\ConsoleApplication1.exe
