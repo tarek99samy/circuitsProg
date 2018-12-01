@@ -1,29 +1,31 @@
-//#pragma once
+#pragma once
 //#include"nodes.h"
 
 #include <complex>
+#include <string>
 class inductance //:public nodes , public impedance
 {
-private:
-	
-	
+	//private:
+
+
 public:
+	std::string name;
 	float value;
 	//float phase;
 	int firstNode;
 	int secondNode;
 	std::complex<double>z;
-	float omega;
+	//float omega;
 	//inductance();
-	
-	
-	
-	inductance(float v , int n1 , int n2);
-	void split(int n);
-	void setMagnitude(float);
-	void setPhase(float);
-	float getMagnitude();
-	float getPhase();
+
+
+
+	inductance(std::string n, float v, int n1, int n2);
+	//void split(int n);
+	//void setMagnitude(float);
+	//void setPhase(float);
+	//float getMagnitude();
+	//float getPhase();
 	void convertToImpedance(float w);
 	~inductance();
 };

@@ -37,11 +37,12 @@ int main(){
 		split(x, a, ' ');
 		//int n1 = int(a[1][0]) - 48;
 		//int n2 = int(a[1][1]) - 48;
+		string n = a[0];
 		int n1 = stoi(a[1]);
 		int n2 = stoi(a[2]);
 		float value = stoi(a[3]);
 		double phase = stoi(a[4]);
-	    Voltage v(value , n1,  n2, phase);
+	    Voltage v(n,value , n1,  n2, phase);
 		vs.push_back(v);
 
 	}
@@ -52,11 +53,12 @@ int main(){
 		//int n2 = int(a[1][1]) - 48;
 		//float value = stoi(a[2]);
 		//double phase = stoi(a[3]);
+		string n = a[0];
 		int n1 = stoi(a[1]);
 		int n2 = stoi(a[2]);
 		float value = stoi(a[3]);
 		double phase = stoi(a[4]);
-		Current i(value, n1, n2);
+		Current i(n,value, n1, n2);
 		Is.push_back(i);
 		cout << Is[0].value << " " << Is[0].firstNode << " " << Is[0].secondNode << endl;
 
@@ -67,11 +69,12 @@ int main(){
 		//int n1 = int(a[1][0]) - 48;
 		//int n2 = int(a[1][0]) - 48;
 		//float value = stoi(a[2]);
+		string n = a[0];
 		int n1 = stoi(a[1]);
 		int n2 = stoi(a[2]);
 		float value = stoi(a[3]);
 		//double phase = stoi(a[4]);
-		resistance r(value, n1, n2);
+		resistance r(n,value, n1, n2);
 		Rs.push_back(r);
 		//cout << n1 << "\t" << n2 << "\n";
 		//cout << Rs[0].value << endl;
@@ -81,12 +84,13 @@ int main(){
 		split(x, a, ' ');
 		//int n1 = int(a[1][0]) - 48;
 		//int n2 = int(a[1][1]) - 48;
+		string n = a[0];
 		int n1 = stoi(a[1]);
 		int n2 = stoi(a[2]);
 		float value = stoi(a[3]);
 		//double phase = stoi(a[4]);
 		//float value = stoi(a[2]);
-		inductance l(value, n1, n2);
+		inductance l(n,value, n1, n2);
 		Ls.push_back(l);
 		//cout << Ls[0].firstNode << endl;
 		//cout << Ls[0].secondNode << endl;
@@ -99,12 +103,13 @@ int main(){
 		split(x, a , ' ');
 		//int n1 = int(a[1][0]) - 48;
 		//int n2 = int(a[1][1]) - 48;
-		//double value = stoi(a[2
+		//double value = stoi(a[2]);
+		string n = a[0];
 		int n1 = stoi(a[1]);
 		int n2 = stoi(a[2]);
 		float value = stoi(a[3]);
 		//double phase = stoi(a[4]);
-		capacitance c(value, n1, n2);
+		capacitance c(n,value, n1, n2);
 		Cs.push_back(c);
 		//cout << Cs[0].firstNode << "\t" << Cs[0].secondNode << endl;
 		//cout << Cs[0].capa << endl;
@@ -177,7 +182,7 @@ void parallel(int n, vector <resistance>r, vector <inductance>in, vector <capaci
 		cout << zt << endl;
 		for (auto i : in) {
 			if (x[0] == i.firstNode && x[1] == i.secondNode) {
-				i.convertToImpedance(i.omega);
+				i.convertToImpedance(50);
 				zt += one/ i.z;
 				//cout << zt << endl;
 			}
@@ -186,7 +191,7 @@ void parallel(int n, vector <resistance>r, vector <inductance>in, vector <capaci
 		cout << zt << endl;
 		for (auto cc : c) {
 			if (x[0] == cc.firstNode && x[1] == cc.secondNode) {
-				cc.convertToImpedance(cc.omega);
+				cc.convertToImpedance(50);
 				zt += one/ cc.z;
 			}
 			
