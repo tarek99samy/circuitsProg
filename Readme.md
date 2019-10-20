@@ -24,10 +24,17 @@ q
 ---------------------------
 sample output :
 the voltage between nodes 0 1 is : 8.661 + 4.9977J
+
 the current  between nodes 0 1 is : -0.0227713 + 0.0444576J 
+
 the voltage between nodes 0 3 is : -0.227713 + 0.444576J 
+
 the current  between nodes 0 3 is : -0.0227713 + 0.0444576J 
+
 the voltage between nodes 1 2 is : -0.0022 + -0.0011J
+
 the current  between nodes 1 2 is : -0.0227713 + 0.0444576J 
+
 the voltage between nodes 2 3 is : 8.891 + 4.554J
+
 the current  between nodes 2 3 is : -0.0227713 + 0.0444576J 
