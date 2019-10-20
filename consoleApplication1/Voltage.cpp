@@ -10,6 +10,16 @@ Voltage::Voltage(std::string n,float v,  int n1,int n2 , float ph)
 	phase =ph;
 }
 
+void Voltage::setValue(float v)
+{
+	value = v;
+}
+
+float Voltage::getValue()
+{
+	return value;
+}
+
 
 Voltage::~Voltage(void)
 {

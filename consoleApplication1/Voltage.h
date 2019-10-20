@@ -10,6 +10,8 @@ public:
 	int secondNode;
 
 	Voltage(std::string n,float v,  int n1,int n2 , float ph=0);
+	void setValue(float v);
+	float getValue();
 	~Voltage(void);
 };
 

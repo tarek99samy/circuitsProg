@@ -24,13 +24,13 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\circuits\circuits\inductance.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="resistance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="capacitance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inductance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -47,14 +47,8 @@
     <ClInclude Include="inductance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt\complex.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="capacitance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\include\complex" />
   </ItemGroup>
 </Project>

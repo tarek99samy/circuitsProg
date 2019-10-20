@@ -77,23 +77,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\circuits\circuits\inductance.cpp" />
     <ClCompile Include="capacitance.cpp" />
     <ClCompile Include="Current.cpp" />
+    <ClCompile Include="inductance.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="resistance.cpp" />
     <ClCompile Include="Voltage.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt\complex.h" />
     <ClInclude Include="capacitance.h" />
     <ClInclude Include="Current.h" />
     <ClInclude Include="inductance.h" />
     <ClInclude Include="resistance.h" />
     <ClInclude Include="Voltage.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\include\complex" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
